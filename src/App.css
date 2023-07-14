@@ -1,7 +1,24 @@
 .App {
   text-align: center;
+  font-size: 16px;
+  color: #343A40;
 }
-
+a{
+  text-decoration: none;
+  color: #343A40;
+}
+.btn-danger{
+  background-color: #FE1468;
+}
+.btn-light{
+  color: #868E96;
+  --bs-btn-hover-color: #868E96;
+  --bs-btn-hover-border-color: #868E96;
+  --bs-btn-active-color: #343A40;
+  --bs-btn-hover-bg: white;
+  --bs-btn-active-color: #868E96;
+  --bs-btn-active-bg: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +52,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* #svg {
+  position: fixed;
+  top: 30vw;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateX(-50%) scale(3);
+}
+
+.line-animation {
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--path-length);
+  transition: stroke-dashoffset 1s;
+}
+
+.line-animation.scrolled {
+  stroke-dashoffset: 0;
+} */
+.homepage_main_div {
+  height: 100px;
+  /* position: relative; */
+}
+.homepage_logo {
+  position: absolute; 
+  top: 0px; 
+ left: 50%;
 }
