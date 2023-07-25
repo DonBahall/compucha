@@ -1,0 +1,35 @@
+.FAQ {
+  background-color: #fcfeff;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Nunito";
+  &_line {
+    border-bottom: 2px solid #dee2e6;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    &__title {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      position: absolute;
+      top: -1000px;
+      color: #868e96;
+      font-size: 14px;
+      font-weight: 400;
+      transition: top 0.1s ease;
+    }
+    .open {
+      position: relative;
+      top: 0;
+    }
+  }
+  button {
+    color: #fe1468;
+    background-color: transparent;
+    border: none;
+  }
+}

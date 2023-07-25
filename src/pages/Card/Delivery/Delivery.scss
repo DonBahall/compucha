@@ -1,0 +1,63 @@
+.delivery {
+  margin: 16px 0;
+  border-radius: 18px;
+  background-color: #fcfeff;
+  padding: 16px;
+  &_header {
+    display: flex;
+    div {
+      &:first-of-type {
+        flex: 1;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &:last-of-type {
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 16px;
+        span {
+          color: #fe1468;
+        }
+      }
+    }
+  }
+  &_info {
+    margin-top: 16px;
+    border-top: 2px solid #dee2e6;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    &__line {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        flex: 1;
+        gap: 5px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        p {
+          margin: 0;
+          &:first-of-type {
+            font-family: "Nunito";
+            color: #343a40;
+            font-weight: 400;
+            font-size: 16px;
+          }
+          &:last-of-type {
+            font-size: 14px;
+            color: #868e96;
+          }
+        }
+      }
+    }
+  }
+}

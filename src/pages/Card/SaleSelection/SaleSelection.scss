@@ -1,0 +1,243 @@
+.SaleSelection {
+  border-radius: 18px;
+  background-color: #fcfeff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .priceRating {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    &_left {
+      width: 100%;
+      h4 {
+        color: #12da6e;
+        font-size: 18px;
+      }
+      p {
+        font-size: 40px;
+        span {
+          color: #ced4da;
+          font-size: 16px;
+          text-decoration: line-through;
+        }
+      }
+    }
+    &_right {
+      width: 100%;
+      &__block {
+        display: flex;
+        gap: 1px;
+      }
+      &__info {
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 16px;
+          padding: 0;
+          margin: 0;
+          &:first-of-type {
+            color: #fe1468;
+          }
+          &:nth-last-of-type(2) {
+            color: #868e96;
+          }
+        }
+      }
+      &__button {
+        width: 100%;
+
+        button {
+          width: 100%;
+          height: 100%;
+          border-radius: 18px;
+          background-color: #ffdbe8;
+          border: none;
+          transition: background-color 0.3s linear;
+          &:hover {
+            background-color: #fab2cd;
+          }
+          &:active {
+            background-color: #fb9abe;
+          }
+        }
+      }
+      span {
+        font-size: 12px;
+        color: #bf0f4e;
+      }
+    }
+  }
+  &_toggle {
+    height: 150px;
+    &__head {
+      background-color: #f0f5fa;
+      border-radius: 24px;
+      height: 50px;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      .line_bottom {
+        margin-top: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #ced4da;
+      }
+      .line_bottom_top {
+        right: 0;
+        width: 50%;
+        height: 4px;
+        background-color: red;
+        z-index: 1;
+        transition: transform 0.3s ease;
+      }
+      .transformed {
+        transform: translateX(100%);
+      }
+      .SaleSelection_toggle__head_title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 700;
+        align-items: center;
+        z-index: 1;
+        label {
+          &:last-of-type {
+            margin-right: 10px;
+          }
+        }
+        .radio-label {
+          position: relative;
+          margin-right: 20px;
+          padding-bottom: 5px;
+          cursor: pointer;
+          &.active::after {
+            opacity: 1;
+          }
+        }
+        input {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .section_size {
+    padding: 0 10px;
+    &__size {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      label {
+        width: 100px;
+        height: 40px;
+        border-radius: 18px;
+        background-color: #e9edf2;
+        font-size: 16px;
+        padding: 8px 16px;
+        position: relative;
+        transition: background-color 0.3s ease;
+        input {
+          opacity: 0;
+          visibility: hidden;
+          width: 0;
+          height: 0;
+          position: absolute;
+        }
+      }
+      .size_checked {
+        background-color: #ffdbe8;
+      }
+    }
+    &__type {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      label {
+        width: 100px;
+        height: 40px;
+        border-radius: 18px;
+        background-color: #e9edf2;
+        font-size: 16px;
+        padding: 8px 16px;
+        position: relative;
+        transition: background-color 0.3s ease;
+        input {
+          opacity: 0;
+          visibility: hidden;
+          width: 0;
+          height: 0;
+          position: absolute;
+        }
+      }
+      .bottleType_checked {
+        background-color: #ffdbe8;
+      }
+    }
+    &__count {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      gap: 10px;
+      &___count {
+        display: flex;
+        flex: 1;
+
+        align-items: center;
+        width: 100%;
+
+        button {
+          border-radius: 18px;
+          border: 1px solid #fe1468;
+          width: 48px;
+          height: 48px;
+          text-align: center;
+          background-color: transparent;
+        }
+        span {
+          display: block;
+          text-align: center;
+          width: 40px;
+        }
+        .dissable {
+          border: 1px solid #ced4da;
+        }
+      }
+      &___button {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        button {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          border-radius: 24px;
+          background-color: #fe1468;
+          border: none;
+          align-items: center;
+          padding: 14px 16px;
+        }
+      }
+    }
+  }
+}
