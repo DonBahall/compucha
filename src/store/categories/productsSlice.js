@@ -8,7 +8,7 @@ export const getProducts = createAsyncThunk(
   "products/getProducts",
   async (_, thunkAPI) => {
     try {
-      const res = await axios(`${BASE_URL}/products`);
+      const res = await axios(`${BASE_URL}`); // /products
       return res.data;
     } catch (err) {
       console.log(err);

@@ -1,15 +1,54 @@
-/* a{
-  text-decoration: none; */
-/* } */
-.products{
-  background-color: #F8F9FA;
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://uk.allfont.net/allfont.css?fonts=bowlby-one");
+.list{
+  padding: 20px;
+}
+.section{
+  padding: 2rem 1rem;
+  background-color: #FCFEFF;
   border-radius: 0.85rem;
+  display: flex;
+  flex-direction: column;
+}
+.products{
+  background-color: #FCFEFF;
+  border-radius: 0.85rem;
+  width: 100%;
 }
 .product {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 25px 22px;
+  border-radius: 24px;
+  background-color: #FCFEFF;
+  box-shadow: 
+  0.0029044048860669136px -0.08501984924077988px 14.166666984558105px -273px #0616220F,
+  -0.5204693675041199px 15.235556602478027px 83.33333587646484px -273px #06162204,
+  -1.4272245168685913px 41.77875518798828px 180px -273px #06162200,
+  -2.5744643211364746px 75.3615951538086px 276.6666564941406px -273px #06162200,
+  -3.8192923069000244px 111.80110168457031px 345.8333435058594px -273px #06162200,
+  -5.0188117027282715px 146.914306640625px 360px -273px #06162200;
+}
+.sectionTitle{
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-family: 'Bowlby One', arial;
+  font-size: 2rem;
+  color: #343A40;
+  line-height: 1.2;
+}
+
+.sectionTitlePink{
+  font-family: 'Bowlby One', arial;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #343A40;
+  line-height: 1.2;
+  padding-bottom: 24px;
+  color: #FE1468;
+  margin-right: auto;
+    /* padding-left: 1rem; */
 }
 h2{
   display: flex;
@@ -33,20 +72,13 @@ h2{
   gap: 20px;
   flex-wrap: wrap;
 }
-
-.product {
-  background: var(--bg);
-  border-radius: 8px;
-  overflow: hidden;
- }
-
-.product:nth-child(5n) {
+/* .product:nth-child(5n) {
   width: calc(100% / 5);
-}
+} */
 
 .image {
   width: 100%;
-  height: 410px;
+  height: 216px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,31 +97,80 @@ h2{
   line-height: 2rem;
   text-decoration: none;
   color: #343A40;
+  padding-top: 16px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FAFBFC 0%, #F5FAFF 74.97%, #E9EDF2 96.39%);
+  height: 297px;
+  border-radius: 24px;
+  padding: 1rem;
+}
+.applauseMain{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+  padding: 15px;
+  justify-content: space-between;
+}
+.applause{
+  display: flex;
+  flex-direction: row; 
+}
+.rating{
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  font-size: 1.125rem;
+  color: #868E96;  
+  font-weight: 400;
+}
+svg {
+   height: 22px;  
+  margin: 5px;  
 }
 .attribute{
   display: flex;
   flex-direction: row;
-  padding-bottom: 0.5rem;
+  justify-content: start;
+  margin-top: 6px;
+}
+.addattribute{
+  padding-bottom: 1rem;
+
+}
+.filters{
+  padding: 0 20px ;
 }
 .filter{
   font-weight: 400;
-  font-size: 1.125;
+  font-size: 1.125rem;
   color: #868E96;  
+  padding-right: 15px;
 }
-.attribute:first-child{
+.filters_group{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 1rem 2rem 1rem;
 }
+.filters_item{
+  padding-right: 0.5rem;
+  color: #868E96;
+  font-weight: 700;
+}
+
 .filterAtt {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 1.125;
   line-height: 1.125;
   color: var(--grey);
   text-transform: uppercase;
-  margin-top: 5px;
-  margin-bottom: 28px;
+  /* margin-top: 6px;
+  margin-bottom: 28px; */
+  color: #495057;
+  
 }
 
 .info {
@@ -97,6 +178,8 @@ h2{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1.6px solid #E9EDF2;
+  padding-top: 1rem;
 }
 
 .prices {
@@ -133,8 +216,14 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
-.buttons_links .light{
+.buttons_links a{
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+.buttons_links a button{
   width: 100%;
 }
 a{

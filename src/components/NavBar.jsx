@@ -12,7 +12,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar className={styles.section}>
       <Container>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

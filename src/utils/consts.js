@@ -1,1 +1,1 @@
-export const BASE_URL = "https://api.escuelajs.co/api/v1";
+export const BASE_URL = "https://tea-online-store-49ab24d5b4df.herokuapp.com/store/kombucha";

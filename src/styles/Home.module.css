@@ -1,3 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://uk.allfont.net/allfont.css?fonts=bowlby-one");
 .home{
-  background-color: rgb(189, 181, 181);
+  font-family: 'Nutino', sans-serif;
+  background-color: #F0F5FA;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+.homeTitle{
+  color: #FE1468;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+.pink{
+  color: #FE1468;
+}
+.name{
+  color: #343A40;
+  font-size: 52px;
+  padding-left: 1rem;
+}
+.about{
+  padding-left: 1rem;
+}
+.pics{
+  position: relative;
+  top: 100px;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+}
+.leaf{
+  display: flex;
+  justify-content: end;
+}
+.section{
+  position: relative;
+  z-index: 1;
+    background-color: #FCFEFF;
+    border-radius: 0.85rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0 3rem 1rem;
+  }
+.section_title{
+  font-family: 'Bowlby One', arial;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+.section_text{
+  font-family: 'Nutino', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20.8px;
+  padding-bottom: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cont_imgs{
+  height: 224px;
+  padding-bottom: 1rem;
+  margin-left: auto;
+}
+.section_imgs{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  
+  width: 306px;
+  padding-right: 0;
+}
+.section_textt{
+  
+  font-size: 1rem;
+  line-height: 20.8px;
+  padding-bottom: 2rem;
+  width: 306px;
+  padding-right: 10px;
+  margin-left: auto;
+}
+.section_imgs{
+  
+  display: flex;
+  flex-direction: row;
+}
+.section_kombucha{
+  position: absolute;
+  top: -211px;
+  left: 0;
+  /* top: -69%; */
+  width: 360px;
+  height: 540px;
+  margin-right: auto;
+  background-size: cover;
+  z-index: 1;
+}
+.section_benefits {
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 75px;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+.section_benefitsP{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section_pngwing{
+  width: 60%;
+  position: absolute;
+  top: -18px;
+  left: 153px;
+  z-index: 5;
+}
+.section_pngwing img{
+  /* position: absolute; */
+  top: -69%;
+
+}
+.sectionFluent{
+  background-color: #FCFEFF;
+    border-radius: 0.85rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.section_FluidImg{
+  width: 100%;
+  height: 554px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 0;
+}
+.section_titleSec{
+  font-family: 'Bowlby One', serif;
+  position: absolute;
+  z-index: 10;
+  top: 45vw;
+  left: 16px;
+  font-size: 3.25rem;
+  color: #FE1468;
+}
+.section_imgLeft{
+  width: 321px;
+  height: 224px;
+  padding-bottom: 1rem;
+  margin-left: auto;
+
+}
+.imgLeft_title{
+  font-weight: 700;
+  padding-left: 20px;
+  /* padding-bottom: 5px; */
+}
+.imgLeft_text{
+  font-size: 1rem;
+  line-height: 20.8px;
+  padding-bottom: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Taste{
+  font-family: 'Bowlby One', serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: #FE1468;
+  font-size: 52px;
+  line-height: 62.4px;
+  background-color: #FFB6D0;
+  height: 96px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.Botla{
+  position: relative;
+  height: 349px;
+}
+.Botla_img{
+  position: absolute;
+  top: 17px;
+  left:0;
+}
+.sectionBlue{
+  font-family: 'Bowlby One', serif;
+  background-color: #12C7E5;
+  height: 754px;
+  border-radius: 0.85rem;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 63px;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+.imgBlue_little{
+  width: 81px;
+  height: 91px;
+  position: absolute;
+  top: -35px;
+}
+.imgBlue_big{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 139px;
+  top: 219px;
+  z-index: 1;
+}
+.sectionBlue_p1{
+  margin: 0;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 52px;
+  color: #FE1468;
+}
+a.sectionBlue_p1{
+  z-index: 10;
+}
+.sectionBlue_p2{
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 52px;
+  color: #DCFAFF;
+}
+.sectionBlue_p3{
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 52px;
+  color: #FCFEFF;
+  
+}
+.spot{
+  width: 232px;
+    height: 300px;
+    position: absolute;
+    left: 160px;
+    top: 638px;
+}
+.spot_p{
+  font-family: 'Nutino', sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  top: 198vw;
+  right: 10px;
+  text-transform: none;
+}
+.spot_arrow{
+  position: absolute;
+  top: 204vw;
+    right: 118px;
 }
