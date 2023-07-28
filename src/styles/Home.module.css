@@ -40,27 +40,43 @@
     background-color: #FCFEFF;
     border-radius: 0.85rem;
     width: 100%;
+    height: 556px;
     margin: 0 auto;
     padding: 2rem 0 3rem 1rem;
   }
 .section_title{
   font-family: 'Bowlby One', arial;
   font-size: 2rem;
-  padding: 2rem 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .section_text{
   font-family: 'Nutino', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 20.8px;
-  padding-bottom: 2rem;
+  padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 0;
+}
+.position_img{
+  height: 198px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.section_Rectangle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: auto;
+  padding-bottom: 10px;
 }
 .cont_imgs{
   height: 224px;
   padding-bottom: 1rem;
   margin-left: auto;
+  
 }
 .section_imgs{
   position: relative;
@@ -125,6 +141,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
+    padding-top: 2rem;
 }
 .section_FluidImg{
   width: 100%;

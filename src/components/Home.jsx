@@ -36,7 +36,10 @@ return (
     <div className={styles.section}>
       <h3 className={styles.section_title}>What is kombucha</h3>
       <p className={styles.section_text}>Kombucha is a naturally fermented beverage made from tea and sugar. Fermentation results in a special culture of probiotics and enzymes.</p>
-      <Image src={Rectangle} rounded className={styles.section_img}/>
+      <div className={styles.position_img}>
+
+      <Image src={Rectangle} rounded className={styles.section_Rectangle}/>
+      </div>
       <p className={styles.section_textt}>Contains antioxidants that your body will benefit from helps to keep you energized and <span className={styles.pink}>fresh after a busy day.</span></p>
     </div>
   
