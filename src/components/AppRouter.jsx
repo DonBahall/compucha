@@ -3,8 +3,8 @@ import { Route, Routes  } from "react-router";
 import Basket from "../pages/Basket";
 import { ROUTES } from "../utils/routes";
 import Home from "./Home";
-import SingleProducts from "./SingleProduct";
 import Products from "./Products";
+import Card from "../pages/Card/Card";
 
 function AppRouter() {
   return (
@@ -12,6 +12,7 @@ function AppRouter() {
       <Route index element={<Home/>}/>
       <Route path={ROUTES.PRODUCT} element={<Products/>} />
       <Route path={ROUTES.BASKET} element={<Basket/>} />
+      <Route path={ROUTES.CARD} element={<Card/>} />
     </Routes>
   );
 }

@@ -51,7 +51,7 @@ function NavBar() {
             <Button variant="secondary">Search</Button>
             <div className={styles.NavBar}></div>
         </Form>
-        <Link to={ROUTES.BASKET}>
+        <Link className={styles.basket} to={ROUTES.BASKET}>
             <FontAwesomeIcon className="ml-2" icon={faCartShopping} size="1x" style={{color: "#f5f7fa",}} />
             <span>2</span>
         </Link>

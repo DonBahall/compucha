@@ -78,12 +78,7 @@ return (
     <Image src={Orange} className={styles.imgBlue_little}/>
     <Image src={Gratefruit} className={styles.imgBlue_big}/>
 
-    {/* <p className={styles.sectionBlue_p1}>Revitalize<br/> Your<br/> Body <br/>
-    with Kombucha<br/>
-    <span className={styles.sectionBlue_p3}>AND Choose</span>
-    </p> */}
-
-    <p className={styles.sectionBlue_p1}>Revitalize</p>
+   <p className={styles.sectionBlue_p1}>Revitalize</p>
     <p className={styles.sectionBlue_p2}>Your<br/> Body</p>
     <Link to={ROUTES.SHOP} className={styles.sectionBlue_p1}>with Kombucha</Link>
     <p className={styles.sectionBlue_p3}>AND Choose</p>

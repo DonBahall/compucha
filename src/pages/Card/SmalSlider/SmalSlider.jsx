@@ -19,7 +19,7 @@ export default (SmalSlider) => {
   let obj = {
     id: 1,
     images: "./img/image_small.png",
-    title: "hello",
+    name: "hello",
     weight: 123,
     ingredients: "banana, apple",
     price: 100,
@@ -33,7 +33,7 @@ export default (SmalSlider) => {
         <SingleProduct
           id={obj.id}
           images={obj.images}
-          title={obj.title}
+          name={obj.name}
           weight={obj.weight}
           ingredients={obj.ingredients}
           price={obj.price}
@@ -42,7 +42,7 @@ export default (SmalSlider) => {
         <SingleProduct
           id={obj.id}
           images={obj.images}
-          title={obj.title}
+          name={obj.name}
           weight={obj.weight}
           ingredients={obj.ingredients}
           price={obj.price}
@@ -51,7 +51,7 @@ export default (SmalSlider) => {
         <SingleProduct
           id={obj.id}
           images={obj.images}
-          title={obj.title}
+          name={obj.name}
           weight={obj.weight}
           ingredients={obj.ingredients}
           price={obj.price}

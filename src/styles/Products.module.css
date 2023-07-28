@@ -10,18 +10,10 @@
   display: flex;
   flex-direction: column;
 }
-.products{
+.product{
   background-color: #FCFEFF;
-  border-radius: 0.85rem;
+  margin-bottom: 2rem;
   width: 100%;
-}
-.product {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 25px 22px;
-  border-radius: 24px;
-  background-color: #FCFEFF;
   box-shadow: 
   0.0029044048860669136px -0.08501984924077988px 14.166666984558105px -273px #0616220F,
   -0.5204693675041199px 15.235556602478027px 83.33333587646484px -273px #06162204,
@@ -29,7 +21,16 @@
   -2.5744643211364746px 75.3615951538086px 276.6666564941406px -273px #06162200,
   -3.8192923069000244px 111.80110168457031px 345.8333435058594px -273px #06162200,
   -5.0188117027282715px 146.914306640625px 360px -273px #06162200;
+  padding: 25px 22px;  
+  border-radius: 24px;
 }
+/* .product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FCFEFF;
+  
+} */
 .sectionTitle{
   align-self: flex-start;
   text-transform: uppercase;
@@ -98,6 +99,7 @@ h2{
   text-decoration: none;
   color: #343A40;
   padding-top: 16px;
+  text-transform: uppercase;
 }
 .card{
   display: flex;

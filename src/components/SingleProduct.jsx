@@ -6,11 +6,14 @@ import vector from "../img/vector/Vector.png";
 import styles from "../styles/Products.module.css";
 
 const SingleProduct = ({ products }) => {
+  const handleButtonClick = () => {
+    alert('Cheers, mate! Your cart just scored some epic drinks!');
+  };
   
   return (
     <div className={styles.list}>
       {products.map(({ id, name, img, weight, rating, ingredients, price }) => (
-        <Link to={`/products/${id}`} key={id} className={styles.product}>
+        <Link to={`/card/${id}`} key={id} className={styles.product}>
           <div className={styles.wrapper}>
             <div className={styles.card}>
               <Image className={styles.image} src={img} alt="" />
@@ -38,7 +41,7 @@ const SingleProduct = ({ products }) => {
                 <div className={styles.price}>$ {price.toFixed(2)}</div>
                 <div className={styles.oldPrice}>$ {(price * 0.8).toFixed(2)}</div>
               </div>
-              <Button variant="danger" className={styles.actions}>
+              <Button variant="danger" className={styles.actions} onClick={handleButtonClick}>
                 Add to cart
               </Button>
             </div>

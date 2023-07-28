@@ -9,6 +9,9 @@ import sort from "../img/vector/Icon.png"
 
 const Products = ({ name, style = {}, products = [], amount }) => {
   const list = products.filter((_, i) => i < amount);
+  const handleButtonClick = () => {
+    alert('Cheers, mate! Your cart just scored some epic drinks!');
+  };
   
   return (
     <div className={styles.section} > 
@@ -31,7 +34,9 @@ const Products = ({ name, style = {}, products = [], amount }) => {
           <Button className={styles.light} variant="light">Go to catalog</Button> 
         </Link>
         <Link>
-        <Button className={styles.light} variant="light">Load more</Button> 
+        <Button className={styles.light} variant="light" onClick={handleButtonClick}>
+          Load more
+        </Button> 
         </Link>          
       </div>      
     </div>
