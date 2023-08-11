@@ -19,6 +19,7 @@ import HomeHead from "../pages/F2/HomeHead/HomeHead";
 import { ROUTES } from "../utils/routes";
 import { Link } from "react-router-dom";
 import Modern from "../pages/F2/Modern/Modern";
+import Find from "../pages/F2/Find/Find";
 
 function Home() {
   const { list } = useSelector(({ products }) => products);
@@ -111,6 +112,8 @@ function Home() {
       </div>
 
       <Products products={list} amount={4} />
+
+      <Find />
     </div>
   );
 }
