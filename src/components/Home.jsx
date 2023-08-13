@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 import Modern from "../pages/F2/Modern/Modern";
 import Find from "../pages/F2/Find/Find";
 import ThisProject from "../pages/F2/ThisProject/ThisProject";
+import CreatedBy from "../pages/F2/CreatedBy/CreatedBy";
 
 function Home() {
   const { list } = useSelector(({ products }) => products);
@@ -116,6 +117,7 @@ function Home() {
 
       <Find />
       <ThisProject />
+      <CreatedBy />
     </div>
   );
 }
