@@ -20,6 +20,7 @@ import { ROUTES } from "../utils/routes";
 import { Link } from "react-router-dom";
 import Modern from "../pages/F2/Modern/Modern";
 import Find from "../pages/F2/Find/Find";
+import ThisProject from "../pages/F2/ThisProject/ThisProject";
 
 function Home() {
   const { list } = useSelector(({ products }) => products);
@@ -114,6 +115,7 @@ function Home() {
       <Products products={list} amount={4} />
 
       <Find />
+      <ThisProject />
     </div>
   );
 }
